@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Space Travel Explorer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="place.css" />
+</head>
+<body>
+  <header>
+    <h1>Explore : Galactic Travel Picks</h1>
+    <p>Select a state and district to view top tourist spots</p>
+  </header>
+
+  <div class="selectors">
+    <select id="stateSelect">
+      <option value="" disabled selected>Select a state</option>
+      <option value="kerala">Kerala</option>
+      <option value="goa">Goa</option>
+    </select>
+
+    <select id="districtSelect" disabled>
+      <option value="" disabled selected>Select a district</option>
+    </select>
+  </div>
+
+  <div id="spotsContainer"></div>
+
+  <script src="places.js"></script>
+</body>
+</html>

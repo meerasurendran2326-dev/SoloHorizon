@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Solo Travel</title>
+    <link rel="stylesheet" href="sign2.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Join the Adventure!</h1>
+        <form id="signup-form">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="avatar">Upload image</label>
+                <input type="file" id="avatar" name="avatar" accept="image/*" required>
+                <img id="avatar-preview" class="preview" alt="Avatar Preview" />
+            </div>
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="travel-choice">Type of Travel</label>
+                <select id="travel-choice" name="travel-choice" required>
+                    <option value="">Select...</option>
+                    <option value="adventure">Adventure</option>
+                    <option value="cultural">Cultural</option>
+                    <option value="beach">Relaxing Beach</option>
+                    <option value="nature">Nature Exploration</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="food-preference">Food Preference</label>
+                <select id="food-preference" name="food-preference" required>
+                    <option value="">Select...</option>
+                    <option value="vegetarian">Vegetarian</option>
+                    <option value="Non-Vegeterian">Non-Vegeterian</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="travel-mode">Preferred Travel Mode</label>
+                <select id="travel-mode" name="travel-mode" required>
+                    <option value="">Select...</option>
+                    <option value="road">By Road</option>
+                    <option value="air">By Flight</option>
+                    <option value="train">By Train</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <button type="submit">Sign Up</button>
+        </form>
+        <div id="message" class="message"></div>
+    </div>
+    <script src="sign2.js"></script>
+</body>
+</html>

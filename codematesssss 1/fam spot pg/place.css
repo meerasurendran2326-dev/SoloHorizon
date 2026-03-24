@@ -1,0 +1,118 @@
+/* styles.css */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif; /* Formal font */
+    background: linear-gradient(135deg, #2c0371, #0b0b22, hsl(266, 97%, 25%));
+    background-attachment: fixed;
+    color: #ffffff;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+  
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://www.transparenttextures.com/patterns/stardust.png') repeat;
+    opacity: 0.06;
+    z-index: -1;
+  }
+  
+  
+  
+  header {
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: rgb(0, 16, 120);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  header h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.5rem;
+    margin: 0;
+    color: #f2f3f7;
+    letter-spacing: 2px;
+  }
+  
+  .selectors {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 2rem auto;
+    flex-wrap: wrap;
+  }
+  
+  select {
+    padding: 0.7rem 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    background-color: #3e3ebd;
+    color: #e4e4f5;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 209, 255, 0.4);
+  }
+  
+  #spotsContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    padding: 2rem;
+    max-width: 12000px;
+    margin: auto;
+  }
+  
+  .spotCard {
+    background: linear-gradient(90deg, #032b6f, #026bf3);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(0, 209, 255, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .spotCard:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 25px rgba(0, 209, 255, 0.5);
+  }
+  
+  .spotCard img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-bottom: 1px solid #00d1ff30;
+  }
+  
+  .spotCard h3 {
+    margin: 1rem;
+    font-size: 1.3rem;
+    color: #00d1ff;
+  }
+  
+  .spotCard p {
+    margin: 0 1rem 1rem;
+    color: #cccccc;
+    line-height: 1.4;
+  }
+  
+  /* Optional background stars */
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: url('https://i.imgur.com/3e5pCXf.png') repeat;
+    opacity: 0.1;
+    z-index: -1;
+    animation: twinkle 20s infinite linear;
+  }
+  
+  @keyframes twinkle {
+    from { transform: translateY(0); }
+    to { transform: translateY(-100px); }
+  }
+  
